@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <nav>
+        <p sec:authentication="name">Username</p>
+        <a th:href="@{/logout}">Logout</a>
+    </nav>
+
+    <h1>Welcome, <span sec:authentication="name">Username</span></h1>
+    <p sec:authentication="authorities">User authorities</p>
+</body>
+</html>
